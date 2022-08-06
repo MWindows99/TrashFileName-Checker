@@ -77,7 +77,8 @@ def main():
         if result == True:
             for gomi in gomi_list:
                 filename = filename.replace(gomi, '')
-            os.rename(original, filename)
+            new_filename = filename + ext
+            os.rename(original, new_filename)
             print("リネームしました。")
         elif result == False:
             print("キャンセルしました。")
