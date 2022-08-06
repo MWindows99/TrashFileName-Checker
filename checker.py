@@ -1,10 +1,6 @@
 import os
 import sys
 
-arg = sys.argv
-original = os.path.basename(arg[1])
-filename, ext = os.path.splitext(original)
-
 gomi_name = [
     "重要",
     "無題",
@@ -58,7 +54,7 @@ def yes_no_input():
         elif choice in ["n", "no"]:
             return False
 
-def checker():
+def checker(filename):
     gomi_list = []
     for gomi in gomi_name:
         if gomi in filename:
@@ -68,8 +64,11 @@ def checker():
     return gomi_list
 
 def main():
+    arg = sys.argv
+    original = os.path.basename(arg[1])
+    filename, ext = os.path.splitext(original)
     print("チェックしています...")
-    gomi_list = checker()
+    gomi_list = checker(filename)
     if len(gomi_list) == 0:
         print("ゴミファイル名ではありません。")
     else:
