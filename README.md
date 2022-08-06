@@ -14,7 +14,20 @@
 👍 After: 2022-08-06.docx
 ```
 
-# Usage
+## Screenshots
+`申請書最新版完成.txt`というファイルをチェックしてみます。
+
+### Before
+~~申請書なのになんで`txt`なんだよという声は心にしまっておいてください。~~
+
+![image](image/before.jpg)
+
+### After
+「最新版」「完成」という単語が削除され、洗練されたファイル名になりました。
+
+![image](image/after.jpg)
+
+## Usage
 本スクリプトを動かすにはPythonが必要です。お使いの環境にPythonがインストールされているか確認してください。<br>
 Pythonさえ、インストールされていればWindows・MacOS・Linuxで動作します。
 
