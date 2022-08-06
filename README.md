@@ -46,3 +46,6 @@ $ python checker.py 申請書.pdf
 チェックしています...
 ゴミファイル名ではありません。
 ```
+
+## License
+You can use it under the [MIT License](LICENSE).
