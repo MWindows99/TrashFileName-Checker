@@ -1,5 +1,6 @@
 import os
 import sys
+import datetime
 
 gomi_name = [
     "重要",
@@ -77,6 +78,9 @@ def main():
         if result == True:
             for gomi in gomi_list:
                 filename = filename.replace(gomi, '')
+            if len(filename) == 0:
+                dd_today = datetime.date.today()
+                filename = str(dd_today)
             new_filename = filename + ext
             os.rename(original, new_filename)
             print("リネームしました。")
